@@ -1,0 +1,9 @@
+{
+    "python.defaultInterpreterPath": "C:\\Users\\Divya Pathak\\Documents\\dbt project\\dbt_venv\\Scripts\\python.exe",
+    "dbt.dbtPythonPath": "C:\\Users\\Divya Pathak\\Documents\\dbt project\\dbt_venv\\Scripts\\python.exe",
+    "dbt.dbtExecutablePath": "C:\\Users\\Divya Pathak\\Documents\\dbt project\\dbt_venv\\Scripts\\dbt.exe",
+    "python.analysis.extraPaths": [
+        "./macros"
+    ],
+    "dbt.perspectiveTheme": "Vintage"
+}

@@ -1,0 +1,16 @@
+select 
+CAST(id AS UNSIGNED) AS repo_id,
+fork,
+UPPER(TRIM(name)) AS name,
+size,
+forks,
+topics,
+private,
+archived, disabled, UPPER(TRIM(language)) as language, watchers, has_pages ,
+{{ convert_date('created_at') }} AS created_at,has_issues,
+{{ convert_date('updated_at') }} AS updated_at,
+UPPER(TRIM(visibility)) AS visibility,
+TRIM(description) AS description, forks_count,open_issues, has_projects,allow_forking,
+network_count,default_branch, watchers_count,has_discussions, stargazers_count,
+has_pull_requests,open_issues_count,subscribers_count,
+CAST(_airbyte_extracted_at as DATETIME) AS ingestion_timestamp from {{ ref('bronze_repositories') }}

@@ -1,0 +1,36 @@
+version: 2 
+
+models:
+    - name: bronze_contributors
+      columns:
+        - name: id
+          tests:
+            - unique
+            - non_null
+
+    - name: bronze_issues
+      columns:
+        - name: id
+          tests:
+           - unique
+           - not_null
+
+    - name: bronze_pull_requests
+      columns:
+        - name: id
+          tests:
+           - unique
+           - not_null
+        - name: number
+          tests: 
+           - non_null
+          
+        
+    - name: bronze_repositories
+      columns:
+        - name: id
+          tests:
+           - unique
+           - not_null
+    
+    

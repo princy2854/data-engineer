@@ -1,0 +1,12 @@
+version: 2
+
+sources:
+  - name: source
+    database: data_warehouse
+    schema: data_warehouse
+
+    tables:
+      - name: contributors
+      - name: issues
+      - name: pull_requests
+      - name: repositories
